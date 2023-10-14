@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    background-color: #0888C4;
+    padding: 20px;
+}
+
+.header__title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__title__link {
+    text-decoration: none;
+    color: black;
+}
+
+.header__options {
+    display: flex;
+    align-items: center;
+}
+
+.header__options__option {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.header__options__option__link {
+    text-decoration: none;
+    color: black;
+}

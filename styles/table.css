@@ -1,0 +1,9 @@
+.table_tasks {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.table_tasks__header {
+    color: white;
+    background: #0888C4;
+}

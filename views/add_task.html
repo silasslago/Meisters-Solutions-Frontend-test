@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meisters Solutions</title>
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/form.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header__title">
+            <a href="../index.html" class="header__title__link">
+                Tasks
+            </a>
+        </h1>
+        <ul class="header__options">
+            <li class="header__options__option">
+                <a href="./views/add_task.html" class="header__options__option__link">
+                    Add Task
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="main">
+        <h2>
+            New task
+        </h2>
+        <form class="form" method="post" onsubmit="return false" action="../controllers/tasks_controller.js">
+            <label for="title">
+                Title:
+            </label>
+            <input id="title" placeholder="title" class="form__input" />
+            <label for="description">
+                Description:
+            </label>
+            <textarea id="description" placeholder="description" class="form__textarea"></textarea>
+            <button class="form__button" type="button" onclick="postTask()">
+                Add
+            </button>
+        </form>
+    </main>
+    <script src="../controllers/tasks_controller.js"></script>
+</body>
+</html>

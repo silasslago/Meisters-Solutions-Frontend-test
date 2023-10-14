@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meisters Solutions</title>
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/table.css">
+</head>
+<body onload="getTaskList()">
+    <header class="header">
+        <h1 class="header__title">
+            Tasks
+        </h1>
+        <ul class="header__options">
+            <li class="header__options__option">
+                <a href="./views/add_task.html" class="header__options__option__link">
+                    Add Task
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <h2>List</h2>
+        <table id="table_tasks" class="table_tasks">
+            <tr class="table_tasks__header">
+                <th>
+                    Title
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Status
+                </th>
+                <th>
+                    Delete
+                </th>
+            </tr>
+        </table>
+    </main>
+    <script src="./controllers/tasks_controller.js"></script>
+</body>
+</html>

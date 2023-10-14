@@ -1,0 +1,15 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.form__input {
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.form__textarea {
+    margin-bottom: 10px;
+    height: 60px;
+}
